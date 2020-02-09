@@ -88,7 +88,7 @@ else:
 print("Code generated successfully")
 if frames != 1:
     print(f"Number of frames = {frames}")
-    print("estimated animation time = " + str(frames * delayval / 100) + "s")
+    print("estimated animation time = " + str(frames * delayval / 1000) + "s")
 
     
     
