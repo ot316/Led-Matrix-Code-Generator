@@ -7,8 +7,8 @@ import argparse
 
 def processframe(image):
     
-   # if isinstance(image, type(None)): 
-    #    raise NameError("File not found") #if no file is found raise error
+    if isinstance(image, type(None)): 
+        raise NameError("File not found") #if no file is found raise error
    
     if image.shape != (16, 16, 3):
         image = cv2.resize(image, (16,16), interpolation = cv2.INTER_AREA)
