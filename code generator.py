@@ -62,7 +62,7 @@ elif filetype in supportedvideofiletypes:
     try:
         delayval = int(sys.argv[3])
     except:
-        raise NameError("Please specify delay in ms between animation frames as their dargument e.g. 100") #if no extension is found raise error
+        raise NameError("Please specify delay in ms between animation frames as third argument e.g. 100") #if no extension is found raise error
     
     outputfolder = 'animations/' + (outputfile[:(str(outputfile).index('.'))])
     outputfilepath = outputfolder + '/' + outputfile  
